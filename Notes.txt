@@ -1,0 +1,25 @@
+Steps for creating dll in c then executed in c
+
+1. Create header file (HEADER)
+2. Create c file (CFILE) to be turned into dll
+    a. #include "HEADER.h"
+
+3. Write batch file
+    gcc -c CFILE.c
+    gcc -shared -o DLLNAME.dll -Wl,--out-implib,libtstdll.a OBJECTFILE.o
+
+4. Execute batch file, creating
+    OBJECTFILE.o
+    DLLNAME.dll
+    libstdll.a
+
+5. Write c file (CFILE2) that will use newly created dll
+    #include "test_dll.h"
+    int main(){
+        message();
+        return 0;
+    }
+
+6. Write batch file
+    gcc -o EXENAME.exe CFILE2.c -L. -lDLLNAME
+    EXENAME.exe
