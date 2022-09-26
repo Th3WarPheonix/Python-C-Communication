@@ -28,7 +28,7 @@ Steps for creating dll in C then executed in Python
 
 3. Write python file (PYFILE) that will use newly created dll
     import ctypes
-    fname=".\DLLFILE.dll" # if in same directory else write file path r/...
+    fname=".\DLLFILE.dll" # if in same directory else write file path "r/...
     dll = ctypes.CDLL(fname)
     dll.FUNCTIONtobeCALLED()
 
