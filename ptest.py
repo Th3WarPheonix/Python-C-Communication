@@ -3,4 +3,6 @@ import ctypes
 
 fname=".\TestDll.dll"
 
-ctypes.OleDLL(fname)
+dll = ctypes.OleDLL(fname)
+
+dll.message()
