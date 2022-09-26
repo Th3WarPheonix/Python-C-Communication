@@ -1,7 +1,11 @@
 
 #include <stdio.h>
-#include "test_dll.h"
 
-EXPORT void message(){
+__declspec(dllexport) void message(){
+    printf("Hello World 6");
+}
+
+int main(){
     printf("Hello World");
+    return 0;
 }
