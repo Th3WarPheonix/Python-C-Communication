@@ -19,8 +19,8 @@ In Progress
 ## Final Notes
 Steps for creating dll in C then executed in Python
 
-1. Create C code (CFILE.c) to be turned into dll
-    a. Write __declspec(dllexport) before any function to be called (FUNCTIONtobeCALLED()) by Python 
+###1. Create C code (CFILE.c) to be turned into dll
+    ####a. Write __declspec(dllexport) before any function to be called (FUNCTIONtobeCALLED()) by Python 
 
 2. Compile C into a .dll file (DLLFILE.dll)
     a. Run in command line or .bat file
