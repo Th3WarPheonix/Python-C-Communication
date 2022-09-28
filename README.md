@@ -34,7 +34,7 @@ i. gcc -shared -o DLLFILE.dll CFILE.c
 
 ### 3. Write python file (PYFILE) that will use newly created dll
     import ctypes
-    fname=".\DLLFILE.dll" # if in same directory else write file path "rC:\...
+    fname=".\DLLFILE.dll" # if in same directory else write file path r"C:\...
     dll = ctypes.CDLL(fname)
     dll.FUNCTIONtobeCALLED()
 
