@@ -1,6 +1,6 @@
 # Python_C_Binding
 
-### Updated 26 September 2022
+### Updated 28 September 2022
 
 ## Primary Objective:
 Trying to figure out how to write code in C and call it in Python to exploit the benefits and remove the drawbacks of both languages, with a little bit of over head.
@@ -23,14 +23,15 @@ __Status__: In Progress
 
 __Completion Date__:
 
-## Project Execution
+## Lessons Learned
 
 ### 1. Create C code (CFILE.c) to be turned into dll
 a. Write __declspec(dllexport) before any function to be called (FUNCTIONtobeCALLED()) by Python 
 
 ### 2. Compile C into a .dll file (DLLFILE.dll)
 a. Run in command line or .bat file
-i. gcc -shared -o DLLFILE.dll CFILE.c
+
+    gcc -shared -o DLLFILE.dll CFILE.c
 
 ### 3. Write python file (PYFILE) that will use newly created dll
     import ctypes
