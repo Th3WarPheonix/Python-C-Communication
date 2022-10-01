@@ -32,17 +32,16 @@ __declspec(dllexport) int arrayC(int length1, double mat[length1]){
 }
 
 // For checking array input and output
-__declspec(dllexport) int arrayC2(int lenrow, int lencol, double mat[lenrow][lencol]){
+__declspec(dllexport) int arrayC2(int lenrow, int lencol, double mat[lencol][lenrow]){
     int i, j;
+    printf("%d, %d\n", lenrow, lencol);
     printf("C\n");
-    for (i = 0; i<lenrow; i++){
-        for (j = 0; i<lencol; j++){
-            printf("%f ", mat[i][j]);
+    for (i = 0; i<lencol; i++){
+        for (j = 0; j<lenrow; j++){
+            printf("[%d, %d, %f] ", i, j, mat[i][j]);
         }
-        printf("%d", i);
         printf("\n");
-        mat[i][j] = mat[i][j] + 1;
-        }
+    }
     printf("\n");
     return 0;
 }
