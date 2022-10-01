@@ -3,7 +3,7 @@
 
 // For checking basic functionality in Python
 __declspec(dllexport) int message(){
-    printf("Hello World 6\n");
+    printf("Hello World from C\n");
     return 5;
 }
 

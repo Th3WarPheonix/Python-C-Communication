@@ -103,8 +103,7 @@ def Passing2DArraystoDLL():
     """How to declare and pass 2D ctype arrays"""
     print('\nPASSING 2D ARRAYS')
 
-    N1 = 8
-    N2 = 2
+    N1, N2 = 8, 2
     values3 = np.array([np.linspace(1, 5, N1), np.linspace(20, 25, N1)])
     carray3 = ctypes.c_double*values3.shape[0] # c_type must match numpy array value type
     varray3 = np.ctypeslib.as_ctypes(values3)
@@ -114,6 +113,7 @@ def Passing2DArraystoDLL():
 
     print('Python')
     printarray(varray3)
+    print(values3.shape[1])
 
     # Priming function
     arrayC2 = dll.arrayC2
