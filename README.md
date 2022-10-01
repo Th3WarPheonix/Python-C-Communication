@@ -72,7 +72,7 @@ Python code that passes array to dll
 
     arrayC(N1, N2, cnparray) # Calling dll function
 
-    print(cnparray[0][0]) # Confirming the values are in the right position and are changed appropriateyl if above C code is changed
+    print(cnparray[0][0]) # Confirming the values are in the right position and are changed appropriately if above C code is changed
 
 
 
