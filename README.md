@@ -19,7 +19,7 @@ __Completion Date__: 26 September 2022
 ## Tertiary Objective:
 Input values and arrays, 1D and 2D, to dll from Python and return them from dll into Python
 
-__Status__: In Progress
+__Status__: Complete
 
 __Completion Date__: 01 October 2022
 
@@ -60,7 +60,7 @@ C code that prints out the matrix passed to it from Python. If the C code is cha
         return 0; /* The array is passed by reference so it does not have to be returned and can be called in Python with new values if the C function changes the array's values */
     }
 
-Python code that passes array to dll
+Python code that passes array to dll.
 
     N1, N2 = 8, 2
     nparray = np.array([np.linspace(1, 5, N1), np.linspace(20, 25, N1)]) # Creating numpy array because that's the most common way to make arrays
